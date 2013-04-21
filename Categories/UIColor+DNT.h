@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern inline UIColor * DNTUIColorFromRGB(NSInteger rgbValue);
+
 @interface UIColor (DNT)
 
 /**
