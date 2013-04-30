@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		65DAACE717305FEA003E4CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE617305FEA003E4CB6 /* Foundation.framework */; };
 		65DAACF617305FEA003E4CB6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACF517305FEA003E4CB6 /* SenTestingKit.framework */; };
-		65DAACF817305FEA003E4CB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACF717305FEA003E4CB6 /* UIKit.framework */; };
 		65DAACF917305FEA003E4CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE617305FEA003E4CB6 /* Foundation.framework */; };
 		65DAACFC17305FEA003E4CB6 /* libDNTUtilities.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE317305FEA003E4CB6 /* libDNTUtilities.a */; };
 		65DAAD0217305FEB003E4CB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65DAAD0017305FEB003E4CB6 /* InfoPlist.strings */; };
 		65DAAD0517305FEB003E4CB6 /* DNTUtilitiesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAAD0417305FEB003E4CB6 /* DNTUtilitiesTests.m */; };
+		65DAAD251730618E003E4CB6 /* DNTFacebookHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAAD1F1730604D003E4CB6 /* DNTFacebookHelper.m */; };
+		65DAAD2617306192003E4CB6 /* UIColor+DNT.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAAD1817306031003E4CB6 /* UIColor+DNT.m */; };
+		65DAAD2717306195003E4CB6 /* UIView+DNT.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAAD1A17306031003E4CB6 /* UIView+DNT.m */; };
+		65DAAD2817306198003E4CB6 /* CALayer+DNT.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAAD1C17306031003E4CB6 /* CALayer+DNT.m */; };
+		65DAAD29173061A8003E4CB6 /* UIColor+DNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DAAD1717306031003E4CB6 /* UIColor+DNT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65DAAD2A173061A8003E4CB6 /* UIView+DNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DAAD1917306031003E4CB6 /* UIView+DNT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65DAAD2B173061A8003E4CB6 /* CALayer+DNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DAAD1B17306031003E4CB6 /* CALayer+DNT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65DAAD2C173061AB003E4CB6 /* DNTFacebookHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DAAD1E1730604D003E4CB6 /* DNTFacebookHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65DAAD2D173061B2003E4CB6 /* DNTUtilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DAAD2317306142003E4CB6 /* DNTUtilities.h */; };
+		65DAAD2F17306215003E4CB6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAAD2E17306215003E4CB6 /* UIKit.framework */; };
+		65DAAD3117306221003E4CB6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAAD3017306221003E4CB6 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +43,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				65DAAD2D173061B2003E4CB6 /* DNTUtilities.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,19 +55,22 @@
 		65DAACEA17305FEA003E4CB6 /* DNTUtilities-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DNTUtilities-Prefix.pch"; sourceTree = "<group>"; };
 		65DAACF417305FEA003E4CB6 /* DNTUtilitiesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNTUtilitiesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DAACF517305FEA003E4CB6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		65DAACF717305FEA003E4CB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		65DAACFF17305FEB003E4CB6 /* DNTUtilitiesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DNTUtilitiesTests-Info.plist"; sourceTree = "<group>"; };
 		65DAAD0117305FEB003E4CB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65DAAD0317305FEB003E4CB6 /* DNTUtilitiesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTUtilitiesTests.h; sourceTree = "<group>"; };
 		65DAAD0417305FEB003E4CB6 /* DNTUtilitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTUtilitiesTests.m; sourceTree = "<group>"; };
-		65DAAD1717306031003E4CB6 /* UIColor+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIColor+DNT.h"; path = "../Externals/Submodules/DNTUtilities/Categories/UIColor+DNT.h"; sourceTree = "<group>"; };
-		65DAAD1817306031003E4CB6 /* UIColor+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIColor+DNT.m"; path = "../Externals/Submodules/DNTUtilities/Categories/UIColor+DNT.m"; sourceTree = "<group>"; };
-		65DAAD1917306031003E4CB6 /* UIView+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIView+DNT.h"; path = "../Externals/Submodules/DNTUtilities/Categories/UIView+DNT.h"; sourceTree = "<group>"; };
-		65DAAD1A17306031003E4CB6 /* UIView+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIView+DNT.m"; path = "../Externals/Submodules/DNTUtilities/Categories/UIView+DNT.m"; sourceTree = "<group>"; };
-		65DAAD1B17306031003E4CB6 /* CALayer+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "CALayer+DNT.h"; path = "../Externals/Submodules/DNTUtilities/Categories/CALayer+DNT.h"; sourceTree = "<group>"; };
-		65DAAD1C17306031003E4CB6 /* CALayer+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "CALayer+DNT.m"; path = "../Externals/Submodules/DNTUtilities/Categories/CALayer+DNT.m"; sourceTree = "<group>"; };
-		65DAAD1E1730604D003E4CB6 /* DNTFacebookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = DNTFacebookHelper.h; path = ../Externals/Submodules/DNTUtilities/Classes/DNTFacebookHelper.h; sourceTree = "<group>"; };
-		65DAAD1F1730604D003E4CB6 /* DNTFacebookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = DNTFacebookHelper.m; path = ../Externals/Submodules/DNTUtilities/Classes/DNTFacebookHelper.m; sourceTree = "<group>"; };
+		65DAAD1717306031003E4CB6 /* UIColor+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DNT.h"; sourceTree = "<group>"; };
+		65DAAD1817306031003E4CB6 /* UIColor+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DNT.m"; sourceTree = "<group>"; };
+		65DAAD1917306031003E4CB6 /* UIView+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DNT.h"; sourceTree = "<group>"; };
+		65DAAD1A17306031003E4CB6 /* UIView+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DNT.m"; sourceTree = "<group>"; };
+		65DAAD1B17306031003E4CB6 /* CALayer+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+DNT.h"; sourceTree = "<group>"; };
+		65DAAD1C17306031003E4CB6 /* CALayer+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+DNT.m"; sourceTree = "<group>"; };
+		65DAAD1E1730604D003E4CB6 /* DNTFacebookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTFacebookHelper.h; sourceTree = "<group>"; };
+		65DAAD1F1730604D003E4CB6 /* DNTFacebookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTFacebookHelper.m; sourceTree = "<group>"; };
+		65DAAD2317306142003E4CB6 /* DNTUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTUtilities.h; sourceTree = "<group>"; };
+		65DAAD2E17306215003E4CB6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65DAAD3017306221003E4CB6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		65DAAD3217306353003E4CB6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DAAD3117306221003E4CB6 /* QuartzCore.framework in Frameworks */,
+				65DAAD2F17306215003E4CB6 /* UIKit.framework in Frameworks */,
 				65DAACE717305FEA003E4CB6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				65DAACF617305FEA003E4CB6 /* SenTestingKit.framework in Frameworks */,
-				65DAACF817305FEA003E4CB6 /* UIKit.framework in Frameworks */,
 				65DAACF917305FEA003E4CB6 /* Foundation.framework in Frameworks */,
 				65DAACFC17305FEA003E4CB6 /* libDNTUtilities.a in Frameworks */,
 			);
@@ -105,8 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				65DAACE617305FEA003E4CB6 /* Foundation.framework */,
+				65DAAD3017306221003E4CB6 /* QuartzCore.framework */,
 				65DAACF517305FEA003E4CB6 /* SenTestingKit.framework */,
-				65DAACF717305FEA003E4CB6 /* UIKit.framework */,
+				65DAAD2E17306215003E4CB6 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -125,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				65DAACEA17305FEA003E4CB6 /* DNTUtilities-Prefix.pch */,
+				65DAAD2317306142003E4CB6 /* DNTUtilities.h */,
+				65DAAD3217306353003E4CB6 /* Config.xcconfig */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,15 +169,15 @@
 		65DAAD1D17306031003E4CB6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				65DAAD1B17306031003E4CB6 /* CALayer+DNT.h */,
+				65DAAD1C17306031003E4CB6 /* CALayer+DNT.m */,
 				65DAAD1717306031003E4CB6 /* UIColor+DNT.h */,
 				65DAAD1817306031003E4CB6 /* UIColor+DNT.m */,
 				65DAAD1917306031003E4CB6 /* UIView+DNT.h */,
 				65DAAD1A17306031003E4CB6 /* UIView+DNT.m */,
-				65DAAD1B17306031003E4CB6 /* CALayer+DNT.h */,
-				65DAAD1C17306031003E4CB6 /* CALayer+DNT.m */,
 			);
 			name = Categories;
-			path = "../../../../../You Owe Me Too";
+			path = ../../Categories;
 			sourceTree = "<group>";
 		};
 		65DAAD201730604D003E4CB6 /* Classes */ = {
@@ -169,17 +187,33 @@
 				65DAAD1F1730604D003E4CB6 /* DNTFacebookHelper.m */,
 			);
 			name = Classes;
-			path = "../../../../../You Owe Me Too";
+			path = ../../Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65DAAD2417306172003E4CB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DAAD2C173061AB003E4CB6 /* DNTFacebookHelper.h in Headers */,
+				65DAAD29173061A8003E4CB6 /* UIColor+DNT.h in Headers */,
+				65DAAD2A173061A8003E4CB6 /* UIView+DNT.h in Headers */,
+				65DAAD2B173061A8003E4CB6 /* CALayer+DNT.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		65DAACE217305FEA003E4CB6 /* DNTUtilities */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65DAAD0817305FEB003E4CB6 /* Build configuration list for PBXNativeTarget "DNTUtilities" */;
 			buildPhases = (
+				65DAAD3317306BFE003E4CB6 /* ShellScript */,
 				65DAACDF17305FEA003E4CB6 /* Sources */,
+				65DAAD2417306172003E4CB6 /* Headers */,
 				65DAACE017305FEA003E4CB6 /* Frameworks */,
 				65DAACE117305FEA003E4CB6 /* CopyFiles */,
 			);
@@ -263,6 +297,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		65DAAD3317306BFE003E4CB6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Hello world!\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -270,6 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DAAD251730618E003E4CB6 /* DNTFacebookHelper.m in Sources */,
+				65DAAD2617306192003E4CB6 /* UIColor+DNT.m in Sources */,
+				65DAAD2717306195003E4CB6 /* UIView+DNT.m in Sources */,
+				65DAAD2817306198003E4CB6 /* CALayer+DNT.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +480,7 @@
 				65DAAD0A17305FEB003E4CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65DAAD0B17305FEB003E4CB6 /* Build configuration list for PBXNativeTarget "DNTUtilitiesTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +489,7 @@
 				65DAAD0D17305FEB003E4CB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
