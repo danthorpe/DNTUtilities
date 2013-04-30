@@ -49,6 +49,14 @@
 		65DAAD0117305FEB003E4CB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		65DAAD0317305FEB003E4CB6 /* DNTUtilitiesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNTUtilitiesTests.h; sourceTree = "<group>"; };
 		65DAAD0417305FEB003E4CB6 /* DNTUtilitiesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNTUtilitiesTests.m; sourceTree = "<group>"; };
+		65DAAD1717306031003E4CB6 /* UIColor+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIColor+DNT.h"; path = "../Externals/Submodules/DNTUtilities/Categories/UIColor+DNT.h"; sourceTree = "<group>"; };
+		65DAAD1817306031003E4CB6 /* UIColor+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIColor+DNT.m"; path = "../Externals/Submodules/DNTUtilities/Categories/UIColor+DNT.m"; sourceTree = "<group>"; };
+		65DAAD1917306031003E4CB6 /* UIView+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIView+DNT.h"; path = "../Externals/Submodules/DNTUtilities/Categories/UIView+DNT.h"; sourceTree = "<group>"; };
+		65DAAD1A17306031003E4CB6 /* UIView+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "UIView+DNT.m"; path = "../Externals/Submodules/DNTUtilities/Categories/UIView+DNT.m"; sourceTree = "<group>"; };
+		65DAAD1B17306031003E4CB6 /* CALayer+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "CALayer+DNT.h"; path = "../Externals/Submodules/DNTUtilities/Categories/CALayer+DNT.h"; sourceTree = "<group>"; };
+		65DAAD1C17306031003E4CB6 /* CALayer+DNT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = "CALayer+DNT.m"; path = "../Externals/Submodules/DNTUtilities/Categories/CALayer+DNT.m"; sourceTree = "<group>"; };
+		65DAAD1E1730604D003E4CB6 /* DNTFacebookHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = DNTFacebookHelper.h; path = ../Externals/Submodules/DNTUtilities/Classes/DNTFacebookHelper.h; sourceTree = "<group>"; };
+		65DAAD1F1730604D003E4CB6 /* DNTFacebookHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = DNTFacebookHelper.m; path = ../Externals/Submodules/DNTUtilities/Classes/DNTFacebookHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,8 @@
 		65DAACE817305FEA003E4CB6 /* DNTUtilities */ = {
 			isa = PBXGroup;
 			children = (
+				65DAAD201730604D003E4CB6 /* Classes */,
+				65DAAD1D17306031003E4CB6 /* Categories */,
 				65DAACE917305FEA003E4CB6 /* Supporting Files */,
 			);
 			path = DNTUtilities;
@@ -136,6 +146,30 @@
 				65DAAD0017305FEB003E4CB6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65DAAD1D17306031003E4CB6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				65DAAD1717306031003E4CB6 /* UIColor+DNT.h */,
+				65DAAD1817306031003E4CB6 /* UIColor+DNT.m */,
+				65DAAD1917306031003E4CB6 /* UIView+DNT.h */,
+				65DAAD1A17306031003E4CB6 /* UIView+DNT.m */,
+				65DAAD1B17306031003E4CB6 /* CALayer+DNT.h */,
+				65DAAD1C17306031003E4CB6 /* CALayer+DNT.m */,
+			);
+			name = Categories;
+			path = "../../../../../You Owe Me Too";
+			sourceTree = "<group>";
+		};
+		65DAAD201730604D003E4CB6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				65DAAD1E1730604D003E4CB6 /* DNTFacebookHelper.h */,
+				65DAAD1F1730604D003E4CB6 /* DNTFacebookHelper.m */,
+			);
+			name = Classes;
+			path = "../../../../../You Owe Me Too";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
