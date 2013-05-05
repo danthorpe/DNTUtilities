@@ -8,5 +8,5 @@
 
 /// Configure Search Paths
 HEADER_SEARCH_PATHS = $(inherited) "$(BUILT_PRODUCTS_DIR)/usr/local/include"
-
+PUBLIC_HEADERS_FOLDER_PATH = $(TARGET_NAME)
 USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include" "$(BUILT_PRODUCTS_DIR)/usr/local/include"

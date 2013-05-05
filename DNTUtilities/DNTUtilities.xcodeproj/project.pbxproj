@@ -11,6 +11,10 @@
 		6503C06C17369D7E00346B45 /* UIColor+DNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DAAD3C1730FA1F003E4CB6 /* UIColor+DNT.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6503C06D17369D8100346B45 /* UIView+DNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DAAD3E1730FA1F003E4CB6 /* UIView+DNT.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6503C06E17369D8A00346B45 /* DNTFacebookHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DAAD411730FA1F003E4CB6 /* DNTFacebookHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6503C06F1736C79200346B45 /* CALayer+DNT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DAAD3A1730FA1F003E4CB6 /* CALayer+DNT.h */; };
+		6503C0701736C79200346B45 /* UIColor+DNT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DAAD3C1730FA1F003E4CB6 /* UIColor+DNT.h */; };
+		6503C0711736C79200346B45 /* UIView+DNT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DAAD3E1730FA1F003E4CB6 /* UIView+DNT.h */; };
+		6503C0721736C79200346B45 /* DNTFacebookHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DAAD411730FA1F003E4CB6 /* DNTFacebookHelper.h */; };
 		65DAACE717305FEA003E4CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE617305FEA003E4CB6 /* Foundation.framework */; };
 		65DAACF617305FEA003E4CB6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACF517305FEA003E4CB6 /* SenTestingKit.framework */; };
 		65DAACF917305FEA003E4CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE617305FEA003E4CB6 /* Foundation.framework */; };
@@ -43,6 +47,10 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				6503C06F1736C79200346B45 /* CALayer+DNT.h in CopyFiles */,
+				6503C0701736C79200346B45 /* UIColor+DNT.h in CopyFiles */,
+				6503C0711736C79200346B45 /* UIView+DNT.h in CopyFiles */,
+				6503C0721736C79200346B45 /* DNTFacebookHelper.h in CopyFiles */,
 				65DAAD2D173061B2003E4CB6 /* DNTUtilities.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +420,7 @@
 				GCC_PREFIX_HEADER = "DNTUtilities/DNTUtilities-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -425,6 +434,7 @@
 				GCC_PREFIX_HEADER = "DNTUtilities/DNTUtilities-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
