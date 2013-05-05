@@ -1,6 +1,6 @@
 //
 //  CALayer+DNT.h
-//  You Owe Me Too
+//  Daniel Thorpe
 //
 //  Created by Daniel Thorpe on 21/04/2013.
 //  Copyright (c) 2013 Blinding Skies. All rights reserved.

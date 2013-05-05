@@ -13,5 +13,6 @@
 #import "UIColor+DNT.h"
 #import "UIView+DNT.h"
 #import "CALayer+DNT.h"
+#import "UIDevice+DNT.h"
 
 #endif

@@ -15,6 +15,9 @@
 		6503C0701736C79200346B45 /* UIColor+DNT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DAAD3C1730FA1F003E4CB6 /* UIColor+DNT.h */; };
 		6503C0711736C79200346B45 /* UIView+DNT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DAAD3E1730FA1F003E4CB6 /* UIView+DNT.h */; };
 		6503C0721736C79200346B45 /* DNTFacebookHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 65DAAD411730FA1F003E4CB6 /* DNTFacebookHelper.h */; };
+		6503C0771736E01E00346B45 /* UIDevice+DNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 6503C0751736E01E00346B45 /* UIDevice+DNT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6503C0781736E01E00346B45 /* UIDevice+BCDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 6503C0761736E01E00346B45 /* UIDevice+BCDeviceHardware.m */; };
+		6503C0791736E11700346B45 /* UIDevice+DNT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6503C0751736E01E00346B45 /* UIDevice+DNT.h */; };
 		65DAACE717305FEA003E4CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE617305FEA003E4CB6 /* Foundation.framework */; };
 		65DAACF617305FEA003E4CB6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACF517305FEA003E4CB6 /* SenTestingKit.framework */; };
 		65DAACF917305FEA003E4CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE617305FEA003E4CB6 /* Foundation.framework */; };
@@ -51,6 +54,7 @@
 				6503C0701736C79200346B45 /* UIColor+DNT.h in CopyFiles */,
 				6503C0711736C79200346B45 /* UIView+DNT.h in CopyFiles */,
 				6503C0721736C79200346B45 /* DNTFacebookHelper.h in CopyFiles */,
+				6503C0791736E11700346B45 /* UIDevice+DNT.h in CopyFiles */,
 				65DAAD2D173061B2003E4CB6 /* DNTUtilities.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +62,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6503C0751736E01E00346B45 /* UIDevice+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DNT.h"; sourceTree = "<group>"; };
+		6503C0761736E01E00346B45 /* UIDevice+BCDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+BCDeviceHardware.m"; sourceTree = "<group>"; };
 		65DAACE317305FEA003E4CB6 /* libDNTUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDNTUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DAACE617305FEA003E4CB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65DAACEA17305FEA003E4CB6 /* DNTUtilities-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DNTUtilities-Prefix.pch"; sourceTree = "<group>"; };
@@ -177,6 +183,8 @@
 		65DAAD391730FA1F003E4CB6 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				6503C0751736E01E00346B45 /* UIDevice+DNT.h */,
+				6503C0761736E01E00346B45 /* UIDevice+BCDeviceHardware.m */,
 				65DAAD3A1730FA1F003E4CB6 /* CALayer+DNT.h */,
 				65DAAD3B1730FA1F003E4CB6 /* CALayer+DNT.m */,
 				65DAAD3C1730FA1F003E4CB6 /* UIColor+DNT.h */,
@@ -206,6 +214,7 @@
 				6503C06B17369D7A00346B45 /* CALayer+DNT.h in Headers */,
 				6503C06C17369D7E00346B45 /* UIColor+DNT.h in Headers */,
 				6503C06D17369D8100346B45 /* UIView+DNT.h in Headers */,
+				6503C0771736E01E00346B45 /* UIDevice+DNT.h in Headers */,
 				6503C06E17369D8A00346B45 /* DNTFacebookHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +336,7 @@
 				65DAAD461730FA1F003E4CB6 /* UIColor+DNT.m in Sources */,
 				65DAAD481730FA1F003E4CB6 /* UIView+DNT.m in Sources */,
 				65DAAD4A1730FA1F003E4CB6 /* DNTFacebookHelper.m in Sources */,
+				6503C0781736E01E00346B45 /* UIDevice+BCDeviceHardware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
