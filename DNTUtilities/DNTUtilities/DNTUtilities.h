@@ -15,4 +15,7 @@
 #import "CALayer+DNT.h"
 #import "UIDevice+DNT.h"
 
+// Classes
+#import "DNTCoreDataStack.h"
+
 #endif

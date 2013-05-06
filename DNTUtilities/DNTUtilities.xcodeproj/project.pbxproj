@@ -18,6 +18,9 @@
 		6503C0771736E01E00346B45 /* UIDevice+DNT.h in Headers */ = {isa = PBXBuildFile; fileRef = 6503C0751736E01E00346B45 /* UIDevice+DNT.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6503C0781736E01E00346B45 /* UIDevice+BCDeviceHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 6503C0761736E01E00346B45 /* UIDevice+BCDeviceHardware.m */; };
 		6503C0791736E11700346B45 /* UIDevice+DNT.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6503C0751736E01E00346B45 /* UIDevice+DNT.h */; };
+		6503C11E17381C3100346B45 /* DNTCoreDataStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 6503C11C17381C3100346B45 /* DNTCoreDataStack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6503C11F17381C3100346B45 /* DNTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6503C11D17381C3100346B45 /* DNTCoreDataStack.m */; };
+		6503C1201738235B00346B45 /* DNTCoreDataStack.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6503C11C17381C3100346B45 /* DNTCoreDataStack.h */; };
 		65DAACE717305FEA003E4CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE617305FEA003E4CB6 /* Foundation.framework */; };
 		65DAACF617305FEA003E4CB6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACF517305FEA003E4CB6 /* SenTestingKit.framework */; };
 		65DAACF917305FEA003E4CB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DAACE617305FEA003E4CB6 /* Foundation.framework */; };
@@ -55,6 +58,7 @@
 				6503C0711736C79200346B45 /* UIView+DNT.h in CopyFiles */,
 				6503C0721736C79200346B45 /* DNTFacebookHelper.h in CopyFiles */,
 				6503C0791736E11700346B45 /* UIDevice+DNT.h in CopyFiles */,
+				6503C1201738235B00346B45 /* DNTCoreDataStack.h in CopyFiles */,
 				65DAAD2D173061B2003E4CB6 /* DNTUtilities.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +68,8 @@
 /* Begin PBXFileReference section */
 		6503C0751736E01E00346B45 /* UIDevice+DNT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DNT.h"; sourceTree = "<group>"; };
 		6503C0761736E01E00346B45 /* UIDevice+BCDeviceHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+BCDeviceHardware.m"; sourceTree = "<group>"; };
+		6503C11C17381C3100346B45 /* DNTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNTCoreDataStack.h; sourceTree = "<group>"; };
+		6503C11D17381C3100346B45 /* DNTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNTCoreDataStack.m; sourceTree = "<group>"; };
 		65DAACE317305FEA003E4CB6 /* libDNTUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDNTUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DAACE617305FEA003E4CB6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		65DAACEA17305FEA003E4CB6 /* DNTUtilities-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DNTUtilities-Prefix.pch"; sourceTree = "<group>"; };
@@ -200,6 +206,8 @@
 			children = (
 				65DAAD411730FA1F003E4CB6 /* DNTFacebookHelper.h */,
 				65DAAD421730FA1F003E4CB6 /* DNTFacebookHelper.m */,
+				6503C11C17381C3100346B45 /* DNTCoreDataStack.h */,
+				6503C11D17381C3100346B45 /* DNTCoreDataStack.m */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -216,6 +224,7 @@
 				6503C06D17369D8100346B45 /* UIView+DNT.h in Headers */,
 				6503C0771736E01E00346B45 /* UIDevice+DNT.h in Headers */,
 				6503C06E17369D8A00346B45 /* DNTFacebookHelper.h in Headers */,
+				6503C11E17381C3100346B45 /* DNTCoreDataStack.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +235,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65DAAD0817305FEB003E4CB6 /* Build configuration list for PBXNativeTarget "DNTUtilities" */;
 			buildPhases = (
-				65DAAD3317306BFE003E4CB6 /* ShellScript */,
 				65DAACDF17305FEA003E4CB6 /* Sources */,
 				65DAACE017305FEA003E4CB6 /* Frameworks */,
 				6503C06A17369D6400346B45 /* Headers */,
@@ -312,19 +320,6 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-		65DAAD3317306BFE003E4CB6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo \"Hello world!\"";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -337,6 +332,7 @@
 				65DAAD481730FA1F003E4CB6 /* UIView+DNT.m in Sources */,
 				65DAAD4A1730FA1F003E4CB6 /* DNTFacebookHelper.m in Sources */,
 				6503C0781736E01E00346B45 /* UIDevice+BCDeviceHardware.m in Sources */,
+				6503C11F17381C3100346B45 /* DNTCoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
